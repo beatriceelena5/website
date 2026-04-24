@@ -62,16 +62,21 @@ Place your KiCAD or similar schematics here in SVG format. -->
 
 
 
-<!-- ## Software
+## Software
 
 | Library | Description | Usage |
 |---------|-------------|-------|
-| [st7789](https://github.com/almindor/st7789) | Display driver for ST7789 | Used for the display for the Pico Explorer Base |
-| [embedded-graphics](https://github.com/embedded-graphics/embedded-graphics) | 2D graphics library | Used for drawing to the display | -->
+| [embassy-stm32](https://github.com/embassy-rs/embassy) | STM32 HAL for Embassy | Used for GPIO, ADC and timers/PWM |
+| [embassy-executor](https://github.com/embassy-rs/embassy) | Async task executor | Runs the main application logic |
+| [embassy-time](https://github.com/embassy-rs/embassy) | Timekeeping and delays | Used for timing and sensor polling |
+| [embedded-hal](https://github.com/rust-embedded/embedded-hal) | Hardware abstraction layer | Standard interface for peripherals |
+| [defmt](https://github.com/knurling-rs/defmt) | Lightweight logging framework | Used for debugging and logging |
+| [defmt-rtt](https://github.com/knurling-rs/defmt) | RTT logging transport | Sends logs to the PC |
+| [panic-probe](https://github.com/knurling-rs/probe-run) | Panic handler | Used for debugging crashes |
 
 ## Links
 
 <!-- Add a few links that inspired you and that you think you will use for your project -->
 
-1. [link](https://www.instructables.com/Arduino-Laser-Harp-1/)
+1. [Arduino-Laser-Harp](https://www.instructables.com/Arduino-Laser-Harp-1/)
 
